@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="426.0" prefWidth="931.0" style="-fx-background-color: rgba(0,100,100,0);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_login.HomeController">
+    <children>
+        <AnchorPane layoutX="-1.0" layoutY="61.0" prefHeight="350.0" prefWidth="936.0" style="-fx-border-radius: 5em; -fx-background-color: #fff;">
+            <children>
+            <JFXButton fx:id="btn_login" buttonType="RAISED" defaultButton="true" layoutY="138.0" onAction="#handleButtonAction" prefHeight="44.0" prefWidth="191.0" ripplerFill="#6677e3" text="Login" underline="true" />
+            <JFXButton fx:id="btn_signup" buttonType="RAISED" layoutY="264.0" onAction="#handleButtonAction" prefHeight="44.0" prefWidth="191.0" ripplerFill="#6677e3" text="Sign Up" underline="true" />
+            <AnchorPane fx:id="pn_signup" layoutX="721.0" layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#handleButtonAction" prefHeight="556.0" prefWidth="477.0" style="-fx-background-color: #fff;">
+                <children>
+                    <Label alignment="CENTER" layoutX="203.0" layoutY="25.0" prefHeight="44.0" prefWidth="95.0" text="Sign Up" textFill="#1a33d5">
+                        <font>
+                            <Font size="22.0" />
+                        </font>
+                    </Label>
+                    <JFXTextField layoutX="94.0" layoutY="99.0" prefHeight="44.0" prefWidth="313.0" promptText="Fullname" />
+                    <JFXTextField layoutX="94.0" layoutY="188.0" prefHeight="44.0" prefWidth="313.0" promptText="Username" />
+                    <JFXTextField layoutX="94.0" layoutY="278.0" prefHeight="44.0" prefWidth="313.0" promptText="Email" />
+                    <JFXPasswordField layoutX="94.0" layoutY="367.0" prefHeight="44.0" prefWidth="313.0" promptText="Password" />
+                    <JFXButton buttonType="RAISED" layoutX="165.0" layoutY="462.0" prefHeight="44.0" prefWidth="171.0" text="Sign Up" underline="true" />
+                  
+                                                                                                                            </children>
+            </AnchorPane>
+            <AnchorPane fx:id="pn_login" layoutX="722.0" onDragDetected="#handleButtonAction" prefHeight="556.0" prefWidth="477.0" style="-fx-background-color: #fff;">
+                <children>
+                    <Label alignment="CENTER" layoutX="196.0" layoutY="41.0" prefHeight="44.0" prefWidth="95.0" style="-fx-background-color: #fff;" text="Login" textFill="#1a33d5">
+                        <font>
+                            <Font size="22.0" />
+                        </font>
+                    </Label>
+                    <JFXTextField layoutX="93.0" layoutY="180.0" prefHeight="44.0" prefWidth="313.0" promptText="Username" />
+                    <JFXPasswordField layoutX="93.0" layoutY="305.0" prefHeight="44.0" prefWidth="313.0" promptText="Password" />
+                    <JFXButton buttonType="RAISED" defaultButton="true" layoutX="164.0" layoutY="427.0" prefHeight="44.0" prefWidth="171.0" text="Login" underline="true" />
+      
+                            </children>
+            </AnchorPane>
+            <JFXButton fx:id="exit" buttonType="RAISED" layoutX="65.0" layoutY="348.0" onAction="#handleButtonAction" prefHeight="26.0" prefWidth="61.0" text="Exit" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="190.0" layoutY="-1.0" prefHeight="681.0" prefWidth="532.0" style="-fx-background-color: #1A33D5;">
+            <children>
+            <Label alignment="CENTER" layoutX="92.0" layoutY="338.0" prefHeight="73.0" prefWidth="349.0" text="Welcome to BusBook" textFill="WHITE">
+                <font>
+                    <Font size="22.0" />
+                </font>
+            </Label>
+            <ImageView fitHeight="186.0" fitWidth="270.0" layoutX="131.0" layoutY="152.0" pickOnBounds="true">
+                <image>
+                    <Image url="@../images/full-charter-bus3.png" />
+                </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
